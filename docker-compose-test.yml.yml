@@ -1,8 +1,8 @@
 version: "3"
 services:
-  db:
+  db_test:
     image: postgres
-    container_name: db
+    container_name: db_test
     restart: always
     ports:
       - 2345:5432
@@ -17,4 +17,4 @@ services:
     env_file:
       - .env.test
     depends_on:
-      - db
+      - db_test
