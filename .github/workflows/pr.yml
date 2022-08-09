@@ -13,7 +13,7 @@ jobs:
           envkey_POSTGRES_USER: "postgres"
           envkey_POSTGRES_PASSWORD: "3042"
           envkey_POSTGRES_DB: "banco"
-          envkey_DATABASE_URL: "postgres://postgres:3042@db:5432/banco"
+          envkey_DATABASE_URL: "postgres://postgres:3042@db_test:5432/banco"
           file_name: .env.test
       - name: Run tests
         run: docker-compose -f docker-compose-test.yml run node_app npm run test
